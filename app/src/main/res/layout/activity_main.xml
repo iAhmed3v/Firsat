@@ -11,19 +11,10 @@
     tools:context=".MainActivity"
     tools:ignore="HardcodedText">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="128dp"
-            android:gravity="center"
-            android:text="GeeksforGeeks"
-            android:textSize="18sp" />
-
-    </LinearLayout>
+        android:layout_height="match_parent"/>
 
     <!--this the navigation view which draws
         and shows the navigation drawer-->
