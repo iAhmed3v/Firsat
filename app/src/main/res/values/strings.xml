@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Firsat</string>
+    <string name="app_name" translatable="false">Firsat</string>
+    <string name="daily_price_text">daily price: 300 TL</string>
+    <string name="monthly_price_text">monthly price: 4500 TL</string>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
