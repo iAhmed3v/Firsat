@@ -79,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if(actionBarDrawerToggle.onOptionsItemSelected(item)) {
+
+            if(item.getItemId() == R.id.nav_terms){
+
+
+            }
             return true;
         }
         return super.onOptionsItemSelected(item);

@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name" translatable="false">Firsat</string>
-    <string name="daily_price_text">daily price: 300 TL</string>
-    <string name="monthly_price_text">monthly price: 4500 TL</string>
+    <string name="app_name">Firsat</string>
+    <string name="daily_price_text" translatable="false">السعر اليومي: 300 TL</string>
+    <string name="monthly_price_text" translatable="false">السعر الشهري: 4500 TL</string>
 
     <!--to toggle the open close button
         of the navigation drawer-->
-    <string name="nav_open">Open</string>
-    <string name="nav_close">Close</string>
-    <string name="car_name_text">Fiat - Egea 2018</string>
+    <string name="nav_open" translatable="false">Open</string>
+    <string name="nav_close" translatable="false">Close</string>
+    <string name="car_name_text" translatable="false">Fiat - Egea 2018</string>
+    <string name="contact_us_text" translatable="false">للحجز تواصل معنا</string>
 </resources>
