@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ahmed3v.firsat">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firsat">
-
-        <activity android:name=".SplashScreen"
+        <activity android:name=".DevInfoActivity"></activity>
+        <activity android:name=".AppInfoActivity" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".TermsActivity"
+            android:theme="@style/Theme.Firsat.NoActionBar"/>
+        <activity
+            android:name=".SplashScreen"
             android:theme="@style/Theme.Firsat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity">
-        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Firsat.NoActionBar" />
     </application>
 
 </manifest>

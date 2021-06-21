@@ -3,22 +3,27 @@ package com.ahmed3v.firsat;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.ahmed3v.firsat.adapter.CarAdapter;
 import com.ahmed3v.firsat.model.Car;
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     public DrawerLayout drawerLayout;
     public ActionBarDrawerToggle actionBarDrawerToggle;
@@ -42,11 +47,17 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(carAdapter);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+
+        NavigationView navigationView = findViewById(R.id.navigation_view);
+        navigationView.setNavigationItemSelectedListener(this);
+        setSupportActionBar(toolbar);
+
 
         // drawer layout instance to toggle the menu icon to open
         // drawer and back button to close drawer
-        drawerLayout = findViewById(R.id.my_drawer_layout);
-        actionBarDrawerToggle = new ActionBarDrawerToggle(this , drawerLayout , R.string.nav_open , R.string.nav_close);
+        drawerLayout = findViewById(R.id.drawer_layout);
+        actionBarDrawerToggle = new ActionBarDrawerToggle(this , drawerLayout , R.string.nav_open, R.string.nav_close);
 
         // pass the Open and Close toggle for the drawer layout listener
         // to toggle the button
@@ -54,7 +65,55 @@ public class MainActivity extends AppCompatActivity {
         actionBarDrawerToggle.syncState();
 
         // to make the Navigation drawer icon always appear on the action bar
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        switch(item.getItemId()){
+
+            case R.id.nav_terms:
+                Intent termsIntent = new Intent(MainActivity.this, TermsActivity.class);
+                startActivity(termsIntent);
+                break;
+
+            case R.id.nav_contact_us:
+
+                break;
+
+            case R.id.nav_location:
+
+                break;
+
+            case R.id.nav_app_info:
+                Intent appInfoIntent = new Intent(MainActivity.this, AppInfoActivity.class);
+                startActivity(appInfoIntent);
+                break;
+
+            case R.id.nav_developer_info:
+                Intent devInfoIntent = new Intent(MainActivity.this, DevInfoActivity.class);
+                startActivity(devInfoIntent);
+                break;
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+
+        return true;
+    }
+
+    //if the Drawer is open and the user pressed the back button
+    //we want to close the drawer first not the app
+    @Override
+    public void onBackPressed() {
+
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+
+            drawerLayout.closeDrawer(GravityCompat.START);
+
+        }else {
+            super.onBackPressed();
+        }
     }
 
     private ArrayList <Car> carArrayList() {
@@ -80,11 +139,8 @@ public class MainActivity extends AppCompatActivity {
 
         if(actionBarDrawerToggle.onOptionsItemSelected(item)) {
 
-            if(item.getItemId() == R.id.nav_terms){
-                
-            }
-            return true;
         }
         return super.onOptionsItemSelected(item);
     }
+
 }
