@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -79,11 +80,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.nav_contact_us:
-
+                Uri number = Uri.parse("tel:+905538918619");
+                Intent callIntent = new Intent(Intent.ACTION_DIAL, number);
+                startActivity(callIntent);
                 break;
 
             case R.id.nav_location:
-
+                Uri location = Uri.parse("https://goo.gl/maps/Gj4dxRwgwZRGZYoE7");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+                startActivity(mapIntent);
                 break;
 
             case R.id.nav_app_info:
