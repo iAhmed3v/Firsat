@@ -81,8 +81,7 @@ public class MainActivity extends AppCompatActivity {
         if(actionBarDrawerToggle.onOptionsItemSelected(item)) {
 
             if(item.getItemId() == R.id.nav_terms){
-
-
+                
             }
             return true;
         }
