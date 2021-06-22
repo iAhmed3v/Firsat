@@ -11,11 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firsat">
-        <activity android:name=".DevInfoActivity"></activity>
-        <activity android:name=".AppInfoActivity" />
-        <activity android:name=".ContactUsActivity" />
+
+        <activity android:name=".DevInfoActivity"
+            android:theme="@style/Theme.Firsat.NoActionBar">
+        </activity>
+
+        <activity android:name=".AppInfoActivity"
+            android:theme="@style/Theme.Firsat.NoActionBar"/>
+
         <activity android:name=".TermsActivity"
             android:theme="@style/Theme.Firsat.NoActionBar"/>
+
         <activity
             android:name=".SplashScreen"
             android:theme="@style/Theme.Firsat.NoActionBar">
