@@ -10,4 +10,6 @@
     <string name="car_name_text" translatable="false">Fiat - Egea 2018</string>
     <string name="contact_us_text" translatable="false">للحجز تواصل معنا</string>
     <string name="app_info_text">شركة فرصات هي شركة تعمل في مجال تأجير السيارات في مدينة إسطنبول ولديها مجموعة كبيرة من السيارات التي تناسب جميع الفئات, سوا أفراد أو عوائل وبأسعار مختلفة.</string>
+    <string name="dev_info_text">أحمد, مبرمج تطبيقات أندرويد بخبرة أكثر من سنة ونصف في هذا المجال ولديه العديد من التطبيقات التي قام بإنشائها.</string>
+    <string name="dev_contact_text">للتواصل</string>
 </resources>
