@@ -12,18 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Firsat">
 
-        <activity android:name=".DevInfoActivity"
+        <activity android:name=".activities.DevInfoActivity"
             android:theme="@style/Theme.Firsat.NoActionBar">
         </activity>
 
-        <activity android:name=".AppInfoActivity"
+        <activity android:name=".activities.AppInfoActivity"
             android:theme="@style/Theme.Firsat.NoActionBar"/>
 
-        <activity android:name=".TermsActivity"
+        <activity android:name=".activities.TermsActivity"
             android:theme="@style/Theme.Firsat.NoActionBar"/>
 
         <activity
-            android:name=".SplashScreen"
+            android:name=".activities.SplashScreen"
             android:theme="@style/Theme.Firsat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:theme="@style/Theme.Firsat.NoActionBar" />
     </application>
 
