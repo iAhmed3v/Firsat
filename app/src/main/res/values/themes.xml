@@ -26,4 +26,10 @@
         <item name="android:textSize">20sp</item>
     </style>
 
+    <!-- Navigation View Theme -->
+    <style name="NavigationViewTheme">
+        <item name="android:fontFamily">@font/tajawal_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
 </resources>
