@@ -18,5 +18,12 @@
     <style name="Theme.Firsat.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
 
-    </style></resources>
+    <!-- Toolbar Theme -->
+    <style name="ToolbarTheme">
+        <item name="android:fontFamily">@font/tajawal_extrabold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>
