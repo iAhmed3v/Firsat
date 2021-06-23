@@ -21,6 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/colorPrimary"
+            android:layoutDirection="rtl"
+            app:titleTextAppearance="@style/ToolbarTheme"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:elevation="5dp"/>
@@ -40,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:layoutDirection="rtl"
         app:itemIconTint="@color/colorPrimary"
         app:itemTextAppearance="@style/NavigationViewTheme"
         app:menu="@menu/navigation_menu" />
