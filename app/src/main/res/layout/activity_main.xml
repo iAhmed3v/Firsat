@@ -46,6 +46,7 @@
         android:layoutDirection="rtl"
         app:itemIconTint="@color/colorPrimary"
         app:itemTextAppearance="@style/NavigationViewTheme"
-        app:menu="@menu/navigation_menu" />
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/nav_header"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
