@@ -122,11 +122,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         ArrayList<Car> list = new ArrayList<>();
 
-        list.add(new Car("https://i0.shbdn.com/photos/41/47/97/x5_863414797l7w.jpg" ,"Fiat - Egea 2017-2018", "السعر اليومي: 300 TL", "السعر الشهري: 6000 TL"));
-        list.add(new Car("https://besthqwallpapers.com/Uploads/18-8-2019/101678/thumb2-fiat-egea-sport-4k-2019-cars-motion-blur-fiat-357.jpg" ,"Fiat - Egea 2019", "السعر اليومي: 350 TL", "السعر الشهري: 6000 TL"));
-        list.add(new Car( "https://i0.shbdn.com/photos/96/19/94/x5_89396199418l.jpg","Renault - Clio 2018", "السعر اليومي: 300 TL", "السعر الشهري: 6000 TL"));
-        list.add(new Car("http://www.arabateknikbilgi.com/wp-content/uploads/2018/01/ArabaTeknikBilgi-2018-Hyundai-Elantra.jpg" ,"Hyundai - Elantra 2018", "السعر اليومي: 350 TL", "السعر الشهري: 6500 TL"));
-        list.add(new Car("https://media.autoexpress.co.uk/image/private/s--DLhebqK4--/v1562243256/autoexpress/2016/08/uk-grand-c-max-front-three-quart-dynamic.jpg" ,"Ford - C-Max 2017", "السعر اليومي: 450 TL", "السعر الشهري: 10500 TL"));
+        list.add(new Car("https://i0.shbdn.com/photos/41/47/97/x5_863414797l7w.jpg" ,"Fiat - Egea 2017-2018", getString(R.string.fiat_17_18_daily_price), getString(R.string.fiat_17_18_monthly_price)));
+        list.add(new Car("https://besthqwallpapers.com/Uploads/18-8-2019/101678/thumb2-fiat-egea-sport-4k-2019-cars-motion-blur-fiat-357.jpg" ,"Fiat - Egea 2019", getString(R.string.fiat_19_daily_price), getString(R.string.fiat_19_monthly_price)));
+        list.add(new Car( "https://i0.shbdn.com/photos/96/19/94/x5_89396199418l.jpg","Renault - Clio 2018", getString(R.string.clio_18_daily_price), getString(R.string.clio_18_monthly_price)));
+        list.add(new Car("http://www.arabateknikbilgi.com/wp-content/uploads/2018/01/ArabaTeknikBilgi-2018-Hyundai-Elantra.jpg" ,"Hyundai - Elantra 2018", getString(R.string.elantra_18_daily_price), getString(R.string.elantra_18_monthly_price)));
+        list.add(new Car("https://media.autoexpress.co.uk/image/private/s--DLhebqK4--/v1562243256/autoexpress/2016/08/uk-grand-c-max-front-three-quart-dynamic.jpg" ,"Ford - C-Max 2017", getString(R.string.ford_17_daily_price), getString(R.string.ford_17_monthly_price)));
 
         return list;
     }

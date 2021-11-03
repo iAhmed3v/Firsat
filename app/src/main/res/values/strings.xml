@@ -1,24 +1,36 @@
 <resources>
     <string name="app_name">Firsat</string>
-    <string name="daily_price_text" translatable="false">السعر اليومي: 300 TL</string>
-    <string name="monthly_price_text" translatable="false">السعر الشهري: 4500 TL</string>
+    <string name="daily_price_text">Daily Price: 300 TL</string>
+    <string name="monthly_price_text" >Monthly Price: 4500 TL</string>
 
     <!--to toggle the open close button
         of the navigation drawer-->
-    <string name="nav_open" translatable="false">Open</string>
-    <string name="nav_close" translatable="false">Close</string>
+    <string name="nav_open" >Open</string>
+    <string name="nav_close" >Close</string>
 
-    <string name="car_name_text" translatable="false">Fiat - Egea 2018</string>
-    <string name="contact_us_text" translatable="false">للحجز تواصل معنا</string>
-    <string name="app_info_text" translatable="false">شركة فرصة هي شركة تعمل في مجال تأجير السيارات في مدينة إسطنبول ولديها مجموعة كبيرة من السيارات التي تناسب جميع الفئات, سوا أفراد أو عوائل وبأسعار مختلفة.</string>
-    <string name="dev_info_text" translatable="false">أحمد, مبرمج تطبيقات أندرويد بخبرة أكثر من سنة ونصف في هذا المجال ولديه العديد من التطبيقات التي قام بإنشائها.</string>
-    <string name="dev_contact_text" translatable="false">للتواصل</string>
-    <string name="about_app_toolbar_text" translatable="false">عن التطبيق</string>
-    <string name="dev_toolbar_text" translatable="false">برمجة وتصميم</string>
-    <string name="nav_terms_text" translatable="false">الشروط والأحكام</string>
-    <string name="nav_contact_us_text" translatable="false">تواصل معنا</string>
-    <string name="nav_location_text" translatable="false">موقعنا</string>
-    <string name="nav_app_info_text" translatable="false">عن التطبيق</string>
-    <string name="nav_dev_text" translatable="false">برمجة وتصميم</string>
-    <string name="terms_toolbar_text" translatable="false">الشروط والأحكام</string>
+    <string name="car_name_text" >Fiat - Egea 2018</string>
+    <string name="contact_us_text" >Rent Now</string>
+    <string name="app_info_text" >Firsat is a company working in the field of car rental in Istanbul and has a wide range of cars that suit all categories, whether individuals or families, at different prices.</string>
+    <string name="dev_info_text" >Ahmed, an Android Application Developer with more than two year of experience in this field and has many applications that he created.</string>
+    <string name="dev_contact_text" >Contact</string>
+    <string name="about_app_toolbar_text" >About App</string>
+    <string name="dev_toolbar_text" >Design and Develop</string>
+    <string name="nav_terms_text" >Rental Terms</string>
+    <string name="nav_contact_us_text" >Contact Us</string>
+    <string name="nav_location_text" >Location</string>
+    <string name="nav_app_info_text" >About App</string>
+    <string name="nav_dev_text" >Design and Develop</string>
+    <string name="terms_toolbar_text" >Rental Terms</string>
+
+    <!---Cars Prices-->
+    <string name="fiat_17_18_daily_price">Daily Price: 300 TL</string>
+    <string name="fiat_17_18_monthly_price">Monthly Price: 6000 TL</string>
+    <string name="fiat_19_daily_price">Daily Price: 350 TL</string>
+    <string name="fiat_19_monthly_price">Monthly Price: 6000 TL</string>
+    <string name="clio_18_daily_price">Daily Price: 300 TL</string>
+    <string name="clio_18_monthly_price">Monthly Price: 6000 TL</string>
+    <string name="elantra_18_daily_price">Daily Price: 350 TL</string>
+    <string name="elantra_18_monthly_price">Monthly Price: 6500 TL</string>
+    <string name="ford_17_daily_price">Daily Price: 450 TL</string>
+    <string name="ford_17_monthly_price">Monthly Price: 10500 TL</string>
 </resources>
