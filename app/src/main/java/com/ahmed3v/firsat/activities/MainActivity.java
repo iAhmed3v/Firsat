@@ -21,6 +21,9 @@ import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
+/*
+The Main Activity implements a NavigationView to display some menu items.
+ */
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     public DrawerLayout drawerLayout;
@@ -35,19 +38,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //create car array list object
         carList = carArrayList();
 
+        //create car adapter object
         carAdapter = new CarAdapter(this, carList);
 
+        //initialize recyclerview
         recyclerView = findViewById(R.id.recycler_view);
 
+        //set layout for the recycler view
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        //set adapter for recycler view
         recyclerView.setAdapter(carAdapter);
 
+        //create toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
 
+        //create navigation view and set item listener for it.
         NavigationView navigationView = findViewById(R.id.navigation_view);
+
         navigationView.setNavigationItemSelectedListener(this);
         setSupportActionBar(toolbar);
 
@@ -120,6 +131,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private ArrayList <Car> carArrayList() {
 
+        //create some array list objects and give them values.
+        //Note: WE SHOULD CHANGE THIS APPROACH ASAP
         ArrayList<Car> list = new ArrayList<>();
 
         list.add(new Car("https://i0.shbdn.com/photos/41/47/97/x5_863414797l7w.jpg" ,"Fiat - Egea 2017-2018", getString(R.string.fiat_17_18_daily_price), getString(R.string.fiat_17_18_monthly_price)));
